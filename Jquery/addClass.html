@@ -5,29 +5,36 @@ $("li").filter(".middle").addClass("selected");
 <li class = "middle">list item 3</li>
 $("p").find("span").addClass("selected");
 
- -->
+-->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 
 	<script>
 		$(document).ready(function(){
-			$("li").eq(1).addClass("selected");
+			
+			$("p").click(function(){
+				$(this).addClass("selected");
+			});
+
+			$(".hapus").click(function(){
+				$("p").removeClass("selected");
+			});
+			
 		});
 	</script>
-	<style> .selected { color:red; } </style>
+	<style> .selected { color:red; font-family: cursive; } p{cursor: pointer;}</style>
 </head>
 <body>
 	<div>
-		<ul>
-			<li>list item 1</li>
-			<li class="selected">list item 2</li>
-			<li>list item 3</li>
-		</ul>
+		<p>list item 1</p>
+		<p>list item 2</p>
+		<p>list item 3</p>
 	</div>
+	<button class="hapus">Hapus Class</button>
 </body>
 </html>

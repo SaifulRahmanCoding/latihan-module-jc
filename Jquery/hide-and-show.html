@@ -35,7 +35,10 @@ $("p").find("span").addClass("selected");
 				$("p").show(); });
 
 			$("p").click(function(){
-				$(this).hide(); });
+				$(this).hide(); }); 
+
+			$(".sembunyi").click(function(){
+				$("p").hide(); });
 		});
 	</script>
 </head>
@@ -44,5 +47,6 @@ $("p").find("span").addClass("selected");
 	<p>Kalimat Paragraf Kedua dst. HILANG</p>
 	<button>MUNCUL</button>
 	<button class="semua">muncul semua</button>
+	<button class="sembunyi">hide semua</button>
 </body>
 </html>

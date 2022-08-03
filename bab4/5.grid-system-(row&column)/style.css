@@ -8,6 +8,6 @@
 	max-height: 720px;
 	object-fit: cover;
 }
-.icon img{
-	width: 60px;
+.icon i{
+	font-size: 60px;
 }
